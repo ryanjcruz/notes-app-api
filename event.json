@@ -1,7 +1,4 @@
 {
-  "pathParameters": {
-    "id": "323a6df0-3779-11e7-9586-f9bd14873594"
-  },
   "requestContext": {
     "authorizer": {
       "claims": {
