@@ -79,3 +79,15 @@ functions:
             cors: true
             authorizer:
               arn: arn:aws:cognito-idp:us-west-2:577462299065:userpool/us-west-2_nfABoROuE
+    # Defines an HTTP API endpoint that calls the main function in delete.js
+    # - path: url path is /notes/{id}
+    # - method: DELETE request
+    delete:
+      handler: delete.main
+      events:
+        - http:
+            path: notes/{id}
+            method: delete
+            cors: true
+            authorizer:
+              arn: arn:aws:cognito-idp:us-west-2:577462299065:userpool/us-west-2_nfABoROuE
